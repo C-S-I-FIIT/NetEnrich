@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  log-enricher:
+    image: log-enricher:latest
+    container_name: log-enricher
+    build: .
+    ports:
+      - "5123:5123"
+    environment:
+      - NETBOX_URL=https://<NETBOX-HOST>
+      - NETBOX_TOKEN=<NETBOX-API-KEY>
+    volumes:
+      - .:/app
+    restart: unless-stopped 
