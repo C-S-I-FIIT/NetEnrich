@@ -1,7 +1,5 @@
-# NetEnrich
-
 <div align="center">
-  <img src="assets/logo.png" alt="NetEnrich Logo" width="200"/>
+  <img src="assets/logo_netnerich.png" alt="NetEnrich Logo" width="200"/>
 </div>
 
 NetEnrich is a FastAPI-based service designed to enrich log data with device and network information from NetBox. It provides a caching mechanism and webhook support for cache invalidation, making it efficient for high-volume log processing environments.
